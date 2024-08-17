@@ -8,7 +8,7 @@
     if($email == 'test@gmail.com' && $password == '12345') {
         $myObj->code = '890578';
         $myObj->success = true;
-
+        $myObj->authenticator = 'authenticator';
         $myJSON = json_encode($myObj);
 
         echo $myJSON;
