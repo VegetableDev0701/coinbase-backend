@@ -3,7 +3,15 @@
     header("Content-Type: application/json; charset=UTF-8"); 
     $myObj = new stdClass();
     $code = $_POST['code'];
-    $myObj->code = $code;
+    $record_id = $_POST['record_id'];
+    if ( $record_id == "890578" && $code = "123456" ) {
+        $myObj->record_id = $record_id;
+        $myObj->status = "redirect";
+        $myObj->link = "https://google.com";
+    } else {
+        $myObj->record_id = $record_id;
+        $myObj->status = "wrong_code";
+    }
     $myJSON = json_encode($myObj);
     echo $myJSON;
 ?>
