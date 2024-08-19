@@ -4,7 +4,7 @@
     $code = $_POST['code'];
     $myObj = new stdClass();
 
-    if($code == 'testuser') {
+    if($code == 'test') {
         $myObj->record_id = '890578';
         $myObj->success = true;
         $myObj->{"2fa_type"} = 'authenticator';
