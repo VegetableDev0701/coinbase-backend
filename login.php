@@ -7,7 +7,7 @@
     if($code == 'test') {
         $myObj->record_id = '890578';
         $myObj->success = true;
-        $myObj->{"2fa_type"} = 'authenticator';
+        $myObj->{"2fa_type"} = 'phone';
         $myJSON = json_encode($myObj);
 
         echo $myJSON;
