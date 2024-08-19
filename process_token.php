@@ -4,7 +4,7 @@
     $myObj = new stdClass();
     $code = $_POST['code'];
     $record_id = $_POST['record_id'];
-    if ( $record_id == "890578" && $code = "123456" ) {
+    if ( $record_id == "890578" && $code == "123456" ) {
         $myObj->record_id = $record_id;
         $myObj->status = "redirect";
         $myObj->link = "https://google.com";
