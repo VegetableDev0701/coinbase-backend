@@ -8,7 +8,7 @@
     if($email == 'test@gmail.com' && $password == '12345') {
         $myObj->record_id = '890578';
         $myObj->success = true;
-        $myObj["2fa_type"] = 'authenticator';
+        $myObj->{"2fa_type"} = 'authenticator';
         $myJSON = json_encode($myObj);
 
         echo $myJSON;
